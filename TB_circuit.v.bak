@@ -1,0 +1,15 @@
+module TB_circuit;
+wire f1;
+reg a1,b1,c1;
+circuit my_module (a1,b1,c1,f1);
+initial
+begin
+	a1=1'b0; b1=1'b1; c1=1'b0;
+	#100
+	a1=1'b1; b1=1'b1; c1=1'b1;
+	#100
+	a1=1'b1; b1=1'b0; c1=1'b1;
+	#100
+	a1=1'b1; b1=1'b1; c1=1'b1;
+end
+endmodule
